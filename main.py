@@ -7,7 +7,7 @@ from pprint import pprint
 
 
 
-ans = requests.get(url=f'https://api.coinmarketcap.com/data-api/v3/cryptocurrency/listing',
+ans = requests.get(url=f'https://api.coinmarketcap.com/data-api/v3/cryptocurrency/listing?start=1&limit=1000',
                         stream=True
         ).json()
 lst = []
